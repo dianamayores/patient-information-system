@@ -5,6 +5,7 @@ api_version: 1
 threadsafe: true
 
 handlers:
+<<<<<<< HEAD
 - url: /assets
   static_dir: assets
 
@@ -12,10 +13,19 @@ handlers:
   static_dir: stylesheets
 
 - url: /.*
+=======
+- url: /static
+  static_dir: static
+ - url: /.*
+>>>>>>> 9b84369fa512d3a99473fce8b4df6603006a29d1
   script: main.application
 
 libraries:
 - name: webapp2
   version: latest
 - name: jinja2
+<<<<<<< HEAD
   version: latest
+=======
+  version: latest
+>>>>>>> 9b84369fa512d3a99473fce8b4df6603006a29d1
